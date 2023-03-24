@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leon</title>
+
+    <style>
+
+        *{
+
+            box-sizing: border-box;
+        }
+
+.card{
+
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    margin-top: 300px;
+    position: relative;
+}
+
+.front , .back{
+
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+padding-top: 140px;
+padding-left: 140px;
+
+
+}
+
+.front{
+
+    background-color: rgb(255, 0, 225);
+  
+}
+
+.back{
+
+    background-color: aqua;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+   
+}
+
+.card:hover .front{
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    transition: all 2s;
+}
+
+
+.card:hover .back{
+    transform: rotateY(360deg);
+    transition: all 2s;
+}
+
+
+    </style>
+
+  </head>
+
+  <body>
+
+        
+        <div class="card">
+
+          <div class="front">
+            <p>front</p>
+          </div>
+
+          <div class="back">
+            <p>back</p>
+          </div>
+
+        </div>
+
+
+  </body>
+</html>
